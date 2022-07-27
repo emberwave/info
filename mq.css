@@ -56,7 +56,9 @@
   }
 
   #list,
-  #contributing-text {
+  #contributing-text,
+  #tools-info,
+  #tools-visual {
     padding-left: 15% !important;
     padding-right: 15% !important;
   }
@@ -80,9 +82,16 @@
     width: 80% !important;
   }
 
-  #contributing-text {
+  #contributing-text,
+  #tools-info,
+  #tools-visual {
     padding-left: 10% !important;
     padding-right: 10% !important;
+  }
+
+  #tools-info,
+  #tools-visual div h2 {
+    font-size: 14px !important;
   }
 
   #title-text {
