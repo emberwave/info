@@ -9,6 +9,10 @@ body {
   background-color: #000000;
 }
 
+a {
+  text-decoration: none;
+}
+
 ::selection {
   background: #8229c6;
 }
@@ -122,7 +126,6 @@ body {
   display: block;
   width: max-content;
   cursor: pointer;
-  text-decoration: none;
   margin: auto;
 }
 
@@ -174,7 +177,8 @@ body {
   border: none;
 }
 
-#buttons a button:hover {
+#buttons a button:hover,
+#back-to-top-btn:hover {
   transform: translateY(-10px);
 }
 
@@ -184,10 +188,6 @@ body {
   font-size: 20px;
 }
 
-#buttons a {
-  text-decoration: none;
-}
-
 #contributing-text,
 #tools-info {
   padding-left: 20%;
@@ -195,10 +195,6 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: #fff;
-}
-
-#contributing-text a {
-  text-decoration: none;
 }
 
 #discord-qr {
@@ -239,11 +235,6 @@ body {
   overflow-y: hidden;
 }
 
-.show-hide-text {
-  color: #969696;
-  cursor: pointer;
-}
-
 .show-more {
   cursor: pointer;
 }
@@ -254,14 +245,28 @@ body {
 
 .show-more + input + * {
   max-height: 0;
-  /*and eventually delay an overflow:auto; */
   overflow: hidden;
-  transition: max-height 1s, overflow 0s;
+  transition: max-height 0.75s, overflow 0s;
 }
 
 .show-more + input:checked + * {
-  /* here comes the compromise, set a max-height that would for your usual contents*/
   max-height: 10em;
   overflow: auto;
   transition: max-height 1.5s, overflow 0.5s 0.5s;
+}
+
+#back-to-top-btn {
+  cursor: pointer;
+  display: flex;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  width: max-content;
+  border-radius: 8px;
+  transition-duration: 250ms;
+}
+
+#back-to-top-btn h2 {
+  margin: 8px;
+  color: #fff;
 }
