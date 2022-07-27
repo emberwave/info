@@ -250,12 +250,13 @@ a {
 }
 
 .show-more + input:checked + * {
-  max-height: 10em;
+  max-height: 20em;
   overflow: auto;
   transition: max-height 1.5s, overflow 0.5s 0.5s;
 }
 
 #back-to-top-btn {
+  border: none;
   cursor: pointer;
   display: flex;
   margin-top: 100px;
