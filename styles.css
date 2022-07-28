@@ -256,10 +256,10 @@ a {
 }
 
 #back-to-top-btn {
+  margin-top: 60px;
   border: none;
   cursor: pointer;
   display: flex;
-  margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
   width: max-content;
@@ -270,4 +270,12 @@ a {
 #back-to-top-btn h2 {
   margin: 8px;
   color: #fff;
+}
+
+#island-icon {
+  display: flex;
+  margin: auto;
+  margin-top: 100px !important;
+  height: 150px;
+  width: 150px;
 }

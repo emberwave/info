@@ -114,6 +114,11 @@
   #contributing-text {
     font-size: 14px;
   }
+
+  #island-icon {
+    height: 120px !important;
+    width: 120px !important;
+  }
 }
 
 @media screen and (max-width: 380px) {
