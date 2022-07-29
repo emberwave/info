@@ -261,14 +261,17 @@ a {
   transition: max-height 1.5s, overflow 0.5s 0.5s;
 }
 
-#back-to-top-btn {
-  margin-top: 60px;
-  border: none;
-  cursor: pointer;
+#back-to-top-a {
   display: flex;
+  margin-top: 60px;
   margin-right: auto;
   margin-left: auto;
   width: max-content;
+}
+
+#back-to-top-btn {
+  border: none;
+  cursor: pointer;
   border-radius: 8px;
   transition-duration: 250ms;
 }
